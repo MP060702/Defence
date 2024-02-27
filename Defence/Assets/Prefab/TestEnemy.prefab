@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2040038813600846046}
   - component: {fileID: 1913879928823303771}
+  - component: {fileID: 5958762650058246465}
   m_Layer: 0
   m_Name: TestEnemy
   m_TagString: Untagged
@@ -41,6 +42,23 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1211696036677017701}
   m_Mesh: {fileID: 4300000, guid: 5156d0d83c36f414083e4bd1d936b803, type: 3}
+--- !u!114 &5958762650058246465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1211696036677017701}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d6260d298ddb6f5449bd3aa9758f90f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  WayPoints: []
+  MaxHp: 5
+  MoveSpeed: 10
+  StealCoin: 100
+  Damage: 1
 --- !u!1001 &1091025432512062454
 PrefabInstance:
   m_ObjectHideFlags: 0
