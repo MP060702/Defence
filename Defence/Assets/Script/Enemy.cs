@@ -33,7 +33,7 @@ public class Enemy : MonoBehaviour // MonoBehaviour을 상속받는 Enemy 클래스
         {
             if (_wayPointCount >= WayPoints.Length - 1) // 만약 wayPointCount 방향점 계수 값이, WayPoints 배열의 길이 값에 -1을 더한 값보다 적다 크거나 갔다면 아래 코드를 작동
             {
-                //GameManager.Inst.playerCharacter.Damaged(Damage);
+                GameManager.Inst.playerCharacter.Damaged(Damage);
                 Destroy(gameObject); // 자기 자신 오브젝트를 삭제
                 return; // 반환한다
             }
