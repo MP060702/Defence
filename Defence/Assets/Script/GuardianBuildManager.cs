@@ -5,15 +5,15 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 
-public class GuardianBuildManager : MonoBehaviour
+public class GuardianBuildManager : MonoBehaviour // MonoBehaviour를 상속받는 클래스 GuardianBuildManager
 {
-    public GameObject[] Tiles;
+    public GameObject[] Tiles; // GameObject 형태의 배열 Tile 을 선언 및 정의,  Guadian을 설치할 수 있는 블록 오브젝트들을 담는 역활을 함
 
-    public GameObject CurrentFocusTile;
-    public GameObject GuardianPrefab;
-    public GameObject BuildIconPrefab;
+    public GameObject CurrentFocusTile; // GameObject 형태의 변수 CurrentFocusTile 을 선언 ,  마우스에 가까운 Tile 오브젝트를 담는 역활을 한다
+    public GameObject GuardianPrefab; // GameObject 형태의 변수 GaudianPrefab 을 선언, Gaurdian 오브젝트를 담는 역활을 함
+    public GameObject BuildIconPrefab; // GameObejct 형태의 변수 BuildIcon 을 선언,  마우슬르 통해 설치하는 곳을 표기해주는 아이콘의 역활을 한다
 
-    public Material BuildCanMat;
+    public Material BuildCanMat; 
     public Material BuildCanNotMat;
 
     public float BuildDeltaY = 0f;

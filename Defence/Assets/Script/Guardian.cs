@@ -5,6 +5,7 @@ using UnityEngine.EventSystems;
 using static System.Net.WebRequestMethods;
 
 [CreateAssetMenu(fileName = "GuardianStatus", menuName = "Scriptable Object/GuardianStatus")]
+
 public class GuardianStatus : ScriptableObject
 {
     public float AttackCycleTime = 1f;
