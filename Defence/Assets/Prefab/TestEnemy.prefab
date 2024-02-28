@@ -56,7 +56,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   WayPoints: []
   MaxHp: 5
-  MoveSpeed: 10
+  MoveSpeed: 5
   StealCoin: 100
   Damage: 1
 --- !u!1001 &1091025432512062454
@@ -115,6 +115,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 13700000, guid: 1e85a4bc085ebaa48b9ca17dc63b9364, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 65eabe933c6cbc84f8297300df4f97f1, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
