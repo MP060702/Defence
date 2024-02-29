@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,8 +43,8 @@ public class GuardianBuildManager : MonoBehaviour // MonoBehaviour를 상속받는 클
 
     private void UpdateFindFocusTile()
     {
-        CurrentFocusTile = null;
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));
+        /*CurrentFocusTile = null;
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane));    
         mousePosition.y = 0f;
 
         foreach (var tile in Tiles)
@@ -58,7 +57,17 @@ public class GuardianBuildManager : MonoBehaviour // MonoBehaviour를 상속받는 클
                 CurrentFocusTile = tile;
                 break;
             }
+        }*/
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        if(Physics.Raycast(ray, out RaycastHit hit,100, LayerMask.GetMask("Tile")))
+        {
+            if(hit.collider.CompareTag("Tile"))
+            {
+                CurrentFocusTile = hit.collider.gameObject;
+            }
         }
+
     }
 
     private void UpdateBuildImage()

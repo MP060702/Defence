@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5588206240873235445}
   - component: {fileID: 3912769815931437139}
   - component: {fileID: 3714100374972010688}
+  - component: {fileID: 1366118403944219327}
   m_Layer: 0
   m_Name: Guardian
   m_TagString: Untagged
@@ -47,8 +48,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 1077181856919403399, guid: c63ebe0a40798b14fafa3c27ad006e25, type: 3}
-  GuardianStatus: {fileID: 0}
-  GuardianRenderer: {fileID: 0}
+  GuardianStatus: {fileID: 11400000, guid: 0d1071eb80a01a541953350a347344ce, type: 2}
+  GuardianRenderer: {fileID: 5712906921626661864}
   Level: 0
 --- !u!135 &3714100374972010688
 SphereCollider:
@@ -71,6 +72,33 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &1366118403944219327
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8785128169576731561}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &5712906921624628104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -143,5 +171,10 @@ PrefabInstance:
 --- !u!4 &5712906921624236298 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400002, guid: 31b5711eb7fc9e74c9b9596af3800686, type: 3}
+  m_PrefabInstance: {fileID: 5712906921624628104}
+  m_PrefabAsset: {fileID: 0}
+--- !u!23 &5712906921626661864 stripped
+MeshRenderer:
+  m_CorrespondingSourceObject: {fileID: 2300000, guid: 31b5711eb7fc9e74c9b9596af3800686, type: 3}
   m_PrefabInstance: {fileID: 5712906921624628104}
   m_PrefabAsset: {fileID: 0}

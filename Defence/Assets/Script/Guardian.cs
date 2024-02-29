@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using static System.Net.WebRequestMethods;
+using static UnityEngine.GraphicsBuffer;
 
 [CreateAssetMenu(fileName = "GuardianStatus", menuName = "Scriptable Object/GuardianStatus")]
 
@@ -43,10 +44,11 @@ public class Guardian : MonoBehaviour
                 SetRotationByDirection();
 
                 GameObject projectileInst = Instantiate(Projectile, transform.position, Quaternion.identity);
+                
                 if (projectileInst != null)
                 {
-                    //projectileInst.GetComponent<Projectile>().Damage = GuardianStatus.Damage;
-                    //projectileInst.GetComponent<Projectile>().Target = target;
+                    projectileInst.GetComponent<Projectile>().Damage = GuardianStatus.Damage;
+                    projectileInst.GetComponent<Projectile>().Target = target;
                 }
             }
         }
