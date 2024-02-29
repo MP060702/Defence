@@ -3651,7 +3651,11 @@ MonoBehaviour:
   - {fileID: 1522626350}
   - {fileID: 86560618}
   - {fileID: 992529929}
-  EnemyPrefab: {fileID: 1211696036677017701, guid: a84fdf2c71af1d248ac87fb272952cc9, type: 3}
+  Goblin: {fileID: 0}
+  UpgradeGoblin: {fileID: 0}
+  Waves: []
+  WaveNum: 1
+  MaxWave: 3
   SpawnCycleTime: 1
 --- !u!114 &1049847817
 MonoBehaviour:
@@ -3680,7 +3684,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d0db322f2dad1f47bae6ae0739a9307, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  GuardianStatuses: []
+  GuardianStatuses:
+  - {fileID: 11400000, guid: 90b5ea06223ec6a48a16493f8939a0a1, type: 2}
+  - {fileID: 11400000, guid: 08116a17c2c00d2488b32bd273ea01e8, type: 2}
+  - {fileID: 11400000, guid: 473c942af48af4142a838c381b713b23, type: 2}
+  AttackRangeImg: {fileID: 1503093965}
+  UpgradeIconButton: {fileID: 1900126927}
   bIsUpgrading: 0
 --- !u!114 &1049847819
 MonoBehaviour:
@@ -4950,6 +4959,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1503093965 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2567234526234445308, guid: 9f0a2d0e8f06de14daf2ab35ce675dff, type: 3}
+  m_PrefabInstance: {fileID: 6186228563190292005}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1522626350
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,6 +6362,17 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1900126927 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3161005382031157558, guid: 9f0a2d0e8f06de14daf2ab35ce675dff, type: 3}
+  m_PrefabInstance: {fileID: 6186228563190292005}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1905100625 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: fa942ba2d8e8a1d439298facb535b2d8, type: 3}

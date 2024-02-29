@@ -48,7 +48,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Projectile: {fileID: 1077181856919403399, guid: c63ebe0a40798b14fafa3c27ad006e25, type: 3}
-  GuardianStatus: {fileID: 11400000, guid: 0d1071eb80a01a541953350a347344ce, type: 2}
+  GuardianStatus: {fileID: 11400000, guid: 90b5ea06223ec6a48a16493f8939a0a1, type: 2}
   GuardianRenderer: {fileID: 5712906921626661864}
   Level: 0
 --- !u!135 &3714100374972010688

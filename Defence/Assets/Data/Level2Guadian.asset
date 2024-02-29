@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 0}
-  m_Name: Level3Guardian
+  m_Name: Level2Guadian
   m_EditorClassIdentifier: Assembly-CSharp::GuardianStatus
-  AttackCycleTime: 1
-  AttackRadius: 5
-  Damage: 1
+  AttackCycleTime: 0.5
+  AttackRadius: 7.5
+  Damage: 4
   MaxTargetCount: 1
   UpgradeCost: 100
   Color: {r: 1, g: 1, b: 1, a: 1}
